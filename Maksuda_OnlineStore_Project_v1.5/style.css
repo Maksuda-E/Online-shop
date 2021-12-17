@@ -1,0 +1,337 @@
+/* layout for the laptop/ desktop */
+
+/* format font-family, font-color and use image for the background */
+body {
+	font-family: "Trebuchet MS", arial, sans-serif;
+	background-image: url(images/background.jpg);
+	color: #696969;
+}
+
+/* format the wrapper property */
+.wrapper {
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+/* format the style of date and time */
+.responsive {
+	position: relative;
+	text-align: right;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+}
+
+/* format the header image style*/
+.responsive img {
+	width: 100%;
+}
+
+/* format the larger text of header section  */
+.centered p {
+	font-family: 'Lobster', cursive;
+	font-size: 3.2vw;
+	color: rgb(8, 56, 42);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	word-spacing: 5px;
+}
+
+/* format the smaller text of header section */
+.centered h6 {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 1.2vw;
+	color: rgb(8, 56, 42);
+	margin-top: -100px;
+	position: absolute;
+	top: 102%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* set the navigation color, length */
+.navbar {
+	width: 100%;
+	background-color: rgb(12, 49, 33);
+	overflow: auto;
+	padding: 10px;
+}
+
+/* set the option color, font-family, size, color  of the navigation section */
+.navbar a {
+	float: left;
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 10px 20px;
+}
+
+/* set the hover color and background color of the option of the navigation section */
+.navbar a:hover {
+	background-color: rgb(163, 224, 224);
+	color: black;
+}
+
+/* set the color of the active options in the navigation bar  */
+.active {
+	background-color: #010d0f;
+}
+
+/* set the color, font-family, size of the category text in the navigation bar */
+.navbar strong {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-weight: bold;
+	font-size: 18px;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	color: white;
+}
+
+/* set the color, font-family, size, border of the options for product category */
+.navbar select {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-weight: bold;
+	font-size: 15px;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	color: black;
+	border: 2px solid rgb(221, 163, 163);
+	border-radius: 4px;
+}
+
+/* format the fieldset background color, length of the display all items section*/
+fieldset {
+	border: 2px solid rgb(23, 59, 46);
+	margin: 0 auto;
+	width: 1000px;
+	background-color: rgb(200, 207, 136);
+}
+
+/* format the legend text color, font-family, size  for all items section */
+legend {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 8px 8px;
+	background-color: rgb(23, 59, 46);
+	color: white;
+	text-transform: uppercase;
+	border: 2px solid rgb(218, 208, 208);
+	border-radius: 8px;
+}
+
+/* set the currency label font-family, size, color, position*/
+.currency label {
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: bold;
+	font-size: 18px;
+	color: black;
+	float: left;
+	text-transform: uppercase;
+}
+
+/* set the options color, font-family, size, margin of the currency*/
+.currency select {
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: bold;
+	font-size: 16px;
+	float: left;
+	padding: 2px 10px;
+	margin-top: -4px;
+	margin-left: 2px;
+	border: 2px solid rgb(19, 18, 18);
+	border-radius: 4px;
+}
+
+/* format the table color, font-family, border, padding  */
+tbody td,
+th {
+	border: 1px solid rgb(209, 203, 203);
+	text-align: center;
+	background-color: rgb(230, 235, 230);
+	padding: 15px 70px;
+	cursor: pointer;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: black;
+}
+
+/* set the hover color for the table data*/
+td:hover {
+	background-color: #85ccc8;
+	color: white;
+}
+
+/* set the images length of individual products */
+img {
+	height: 110px;
+	width: 150px;
+}
+
+/* format the fieldset background color, length of the select items, cart items and review items*/
+.fieldstyle {
+	border: 2px solid rgb(23, 59, 46);
+	margin: 0 auto;
+	width: 1620px;
+	background-color: rgb(200, 207, 136);
+}
+
+/* format the legend text color, font-family, size for the select items, cart items and review items fieldset */
+.items label {
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: bold;
+	font-size: 17px;
+	color: white;
+	background-color: #2F4F4F;
+	padding: 5px 5px;
+	border-radius: 4px;
+}
+
+/* set the input length, font-size, font-family */
+.items input {
+	border: 1px solid black;
+	padding: 5px 5px;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+/* format the button style for the display items, add items, remove items and submit review button */
+.buttonStyle {
+	background-color: rgb(23, 59, 46);
+	color: white;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 10px;
+	width: 115px;
+	height: 40px;
+}
+
+/* set the hover color for the buttons */
+.buttonStyle:hover {
+	background-color: rgb(163, 224, 224);
+	color: black;
+}
+
+/* format the footer style, text, color and length */
+.footerStyle {
+	width: 100%;
+	float: center;
+	bottom: 0;
+	padding: 8px 8px;
+	background-color: rgb(23, 59, 46);
+	color: white;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 22px;
+	text-align: center;
+	font-weight: bold;
+}
+
+/* set the style of email address inside the footer section*/
+.footerStyle a {
+	text-decoration: none;
+	color: rgb(231, 226, 208);
+}
+
+/* set the hover color of email address */
+.footerStyle a:hover {
+	background-color: rgb(228, 224, 174);
+	color: rgb(23, 59, 46);
+}
+
+/* layout for the smartphones */
+
+@media screen and (max-width: 480px) {
+	
+	/* format the wrapper property for the smartphone */
+	#wrap {
+		max-width: 800px;
+	}
+
+	/* format the date */
+	.responsive {
+		font-size: 12px;
+	}
+
+	/* format the header image */
+	.responsive img {
+		width: 500px;
+	}
+
+	/* format the text inside the header */
+	.centered p {
+		font-family: 'Lobster', cursive;
+		font-size: 4.2vw;
+		color: rgb(8, 56, 42);
+		position: absolute;
+		top: 70%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		word-spacing: 5px;
+	}
+	.centered h6 {
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		font-size: 2vw;
+		color: rgb(8, 56, 42);
+		margin-top: -100px;
+		position: absolute;
+		top: 102%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	/* format the navigation section */
+	.navbar a {
+		float: none;
+		display: block;
+	}
+	.navbar a:hover {
+		background-color: rgb(163, 224, 224);
+		color: black;
+	}
+
+	/* format the table */
+	tbody td,
+	th {
+		display: block;
+		width: 90%;
+		padding: 15px 60px;
+		cursor: pointer;
+		margin-left: 5px;
+	}
+
+
+	td {
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 80%;
+	}
+
+	/* format the first table data background color */
+	td:nth-of-type(1) {
+		background: rgb(172, 164, 164);
+	}
+
+	/* format the fieldset */
+	fieldset {
+		width: 650px;
+	}
+
+	.fieldstyle {
+		width: 650px;
+	}
+}

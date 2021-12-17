@@ -1,0 +1,130 @@
+
+<!DOCTYPE html> <!-- declared version of html -->
+<html lang="en-CA"> <!-- language declaration -->
+   <head>
+      <title>Online  Cosmetics Shop</title> <!-- title of the webpage -->
+
+      <!-- used meta tag for declaring utf-8, description, author name and viewport -->
+      <meta charset="UTF-8">
+      <meta name="description" content="This page displays all the cosmetics product and perform some 
+         functionality such as add to cart, review item and filter product by category">
+      <meta name="author" content="Maksuda-E Elahi">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--used link for the font size -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+        <!--link of css style sheet-->
+      <link href="style.css" rel="stylesheet" type="text/css">
+   </head>
+   <body>
+      <div class="wrapper"> <!-- used wrapper div for the body tag -->
+
+        <!-- starting header tag -->
+         <header class="responsive">
+            <p id="date"></p> <!-- id inside the p tag will display the  current date and time -->
+
+            <!-- used image for the background of the header section -->
+            <img src="images/cosmetics.jpg" alt="background cosmetic image" style="height: 420px; opacity: 0.9;"/>
+            <div class="centered">
+               <p>Blooming Beauty</p>
+               <h6>Online Cosmetic Store</h6>
+            </div>
+         </header>
+         <!-- closing header tag -->
+
+         <div class="navbar"> <!-- used div for the navigator -->
+            <nav> <!-- starting nav tag-->
+
+                <!--options into the nav section -->
+               <a href="index.html">Home</a> 
+               <a href="https://www.lipsum.com/" target="_blank">About</a>
+               <strong>Category:</strong>
+               <select id="displayProductFilter" onchange="displayStoreitems(storeItem);">
+                  <option>All</option>
+                  <option selected>Makeup</option>
+                  <option>Hair Product</option>
+                  <option>Skincare</option>
+               </select>
+            </nav>  <!--closing nav tag-->
+         </div> <!-- closing div tag of the nav section -->
+
+         <hr> 
+         <br>
+
+         <!-- used fieldset for the currency selection and display all items of the store -->
+         <fieldset>
+            <legend>All Items</legend>
+            <br><br>
+            <div class="currency">
+               <label for="currency">Currency:</label>
+               <select id="currencySelector" onchange="convertCurrencies();">
+                <!-- used three types of currencies -->
+                  <option value="cad">($)CAD</option>
+                  <option value="usd">($)USD</option>
+                  <option value="eur">(€)EUR</option>
+               </select>
+            </div>
+            <br><br>
+            <!-- display output of  all products of the store -->
+            <div id="divProducts"></div>
+         </fieldset>
+         <br><br>
+
+         <!-- used fieldset to select individual items and display individual item details , add item to cart and remove item from cart-->
+         <fieldset class="fieldstyle">
+            <legend>Select Items</legend>
+            <br>
+            <div class="items">
+               <label>Product Id:</label>
+               <input type="text" id="productId" placeholder="Id of product"><br><br>
+               <label>Quantity:</label>
+               <input type="number" id="Qty" placeholder="Product's quantity"><br><br><br>
+
+               <!-- button of display cart items-->
+               <input type="button" class="buttonStyle" value="Display Items" onclick="displayItemdetails();">
+
+                <!-- button of add items to cart -->
+               <input type="button" class="buttonStyle" value="Add Items" onclick="addToCart();">
+
+                <!-- button of remove items from cart-->
+               <input type="button"  class="buttonStyle" value="Remove Items" onclick="removefromCart();">   
+            </div>
+         </fieldset>
+         <br><br>
+
+         <!-- used fieldset to display selected cart item details with the total cost-->
+         <fieldset class="fieldstyle">
+            <legend>Cart Items</legend>
+            <div id="divCart"></div> <!-- display output of the selected cart item -->
+         </fieldset>
+         <br><br>
+
+         <!-- used fieldset to give review for the individual items -->
+         <fieldset class="fieldstyle">
+            <legend>Reviews</legend>
+            <br>
+            <div class="items">
+               <label>Product Id:</label>
+               <input type="text" id="productIdReview" placeholder="Id of product"><br><br>
+               <label>Review:</label>
+               <input type="text" id="review" placeholder="Product review"><br><br><br>
+
+               <!-- button of submit the review for the selected product -->
+               <input type="button" class="buttonStyle" value="Submit Review" onclick="reviewItem();">
+            </div>
+         </fieldset>
+         <br>
+         <hr>
+         <footer class="footerStyle"> <!-- starting footer tag-->
+            <p>Copyright 2021 | All Rights Reserved | Maksuda's Online Cosmetic Store 
+               | <a href="mailto:someone@example.com">Email:elahimaksuda@gmail.com</a> <!-- link email address -->
+            </p>
+         </footer> <!-- closing footer tag -->
+      </div>
+
+      <!-- link js file to run all the functionality of this webpage -->
+      <script src="functionality.js"></script>
+   </body>
+</html>
